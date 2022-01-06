@@ -1,0 +1,8 @@
+<div class="change-theme">
+  <h2>Theme Preferences</h2>
+  <div class="change-theme-items">
+    <div class="change-theme-items-item" *ngFor="let theme of themeKeys" (click)="changeTheme(theme)"
+      [ngStyle]="{'background-color':themes[theme]['cPrimary']}" [ngClass]="theme == localStorageTheme ? 'active' : ''">
+    </div>
+  </div>
+</div>
