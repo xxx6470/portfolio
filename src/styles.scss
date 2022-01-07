@@ -26,12 +26,75 @@
 
   --app-background       : var(--c-light);
   --app-header-background: var(--c-primary);
-  --app-text-primary     : var(--c-black);
-  --app-text-secondary   : var(--c-dark);
-  --app-text-tertiary    : var(--c-light);
-  --link-color           : var(--c-black);
-  --link-color-hover     : var(--c-black);
-  --link-color-active    : var(--c-black);
+  --app-card-background  : var(--c-light);
+
+  --app-text-primary  : var(--c-black);
+  --app-text-secondary: var(--c-dark);
+  --app-text-tertiary : var(--c-light);
+
+  --link-color       : var(--c-black);
+  --link-color-hover : var(--c-black);
+  --link-color-active: var(--c-black);
+
+  --theme-default: #e3f2fd;
+  --theme-green  : #b6c2b7;
+  --theme-dark   : #212121;
+}
+
+.theme {
+  &-default {
+    --c-primary: #e3f2fd;
+    --c-light  : #ffffff;
+    --c-dark   : #b1bfca;
+
+    --app-background       : #ffffff;
+    --app-header-background: #e3f2fd;
+    --app-card-background  : #F5F5F6;
+
+    --app-text-primary  : #000000;
+    --app-text-secondary: #003c8f;
+    --app-text-tertiary : #ffffff;
+
+    --link-color       : #002f6c;
+    --link-color-hover : #4f83cc;
+    --link-color-active: #002f6c;
+  }
+
+  &-green {
+    --c-primary: #b6c2b7;
+    --c-light  : #e8f5e9;
+    --c-dark   : #b6c2b7;
+
+    --app-background       : #ffffff;
+    --app-header-background: #b6c2b7;
+    --app-card-background  : #F5F5F6;
+
+    --app-text-primary  : #000000;
+    --app-text-secondary: #003300;
+    --app-text-tertiary : #00701a;
+
+    --link-color       : #000000;
+    --link-color-hover : #00701a;
+    --link-color-active: #003300;
+  }
+
+  &-dark {
+    --c-primary: #212121;
+    --c-light  : #484848;
+    --c-dark   : #000000;
+
+    --app-background       : #484848;
+    --app-header-background: #212121;
+    --app-card-background  : #373737;
+
+    --app-text-primary  : #fafafa;
+    --app-text-secondary: #f5f5f5;
+    --app-text-tertiary : #000000;
+
+    --link-color       : #fafafa;
+    --link-color-hover : #f5f5f5;
+    --link-color-active: #f5f5f5;
+  }
 }
 
 * {

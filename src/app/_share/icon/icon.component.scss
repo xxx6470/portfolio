@@ -1,0 +1,20 @@
+:host {
+  display: inline-block;
+
+  svg {
+    fill: var(--c-black);
+  }
+
+  &.link {
+    svg {
+      fill: var(--link-color);
+    }
+  }
+
+  &.s26 {
+    svg {
+      width : 26px;
+      height: 26px;
+    }
+  }
+}

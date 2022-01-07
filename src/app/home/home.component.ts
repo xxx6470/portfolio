@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { THEMES } from "src/app/_config/theme.config";
 import { ThemeService } from "src/app/_service/theme.service";
 
 @Component({
@@ -19,11 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   get themes() {
-    return THEMES;
-  }
-
-  get themeKeys() {
-    return Object.keys(THEMES);
+    return this.themeService.themes;
   }
 
   ngOnInit(): void {

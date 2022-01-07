@@ -55,6 +55,18 @@
   }
 }
 
+.contact-box {
+  position: fixed;
+  bottom  : 3.5rem;
+  left    : 2rem;
+
+  a {
+    &:hover {
+      border-bottom: 0px;
+    }
+  }
+}
+
 footer {
   display         : flex;
   -webkit-box-pack: center;

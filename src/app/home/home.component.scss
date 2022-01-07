@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   gap      : 1rem;
 
-  h2 {
+  &-info {
     flex: 1 1 38%;
   }
 
@@ -36,4 +36,10 @@
       }
     }
   }
+}
+
+.card {
+  background      : var(--app-card-background);
+  // border-radius: 4px;
+  padding         : 2rem;
 }
