@@ -1,5 +1,5 @@
 :host {
-  display: block;
+  display : block;
 }
 
 .app {
@@ -75,7 +75,7 @@ footer {
   font-size       : 12px;
   color           : var(--app-text-secondary);
   padding         : 1rem 0px 2rem;
-  position        : absolute;
-  bottom          : 0;
+  // position        : absolute;
+  // bottom          : 0;
   width           : 100%;
 }
