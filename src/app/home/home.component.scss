@@ -105,6 +105,10 @@
         &:hover {
           color: var(--link-color-hover);
         }
+
+        small {
+          color: var(--app-text-secondary);
+        }
       }
 
       // 手機版
