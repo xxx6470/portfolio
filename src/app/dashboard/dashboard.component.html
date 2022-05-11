@@ -4,14 +4,14 @@
     <div class="app-header-navigation">
       <ul class="nav-list">
         <li>
-          <a [routerLink]="" [routerLinkActiveOptions]="{ exact: false }" routerLinkActive="active">Home</a>
+          <a [routerLink]="''" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Home</a>
         </li>
         <li>
-          <a [routerLink]="'portfolio'" [routerLinkActiveOptions]="{ exact: false }"
+          <a [routerLink]="'portfolio'" [routerLinkActiveOptions]="{ exact: true }"
             routerLinkActive="active">Portfolio</a>
         </li>
         <li>
-          <a [routerLink]="'contact'" [routerLinkActiveOptions]="{ exact: false }" routerLinkActive="active">Contact</a>
+          <a [routerLink]="'contact'" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Contact</a>
         </li>
       </ul>
     </div>
