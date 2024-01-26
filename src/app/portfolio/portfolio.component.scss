@@ -1,0 +1,191 @@
+.card {
+  padding       : 2rem 4rem;
+  display       : flex;
+  flex-direction: column;
+
+  .title {
+    font-size     : 28px;
+    font-weight   : 500;
+    letter-spacing: 3px;
+  }
+
+  .row {
+    padding  : 50px 80px;
+    display  : flex;
+    flex-wrap: wrap;
+    gap      : 1em;
+
+    .col {
+      flex     : 1 1 31%;
+      min-width: 15rem;
+
+      .skills {
+        &-title {
+          color      : var(--app-text-secondary);
+          font-size  : 22px;
+          line-height: 58px;
+        }
+
+        &-items {
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+.wrap {
+  max-width    : 60%;
+  margin       : 50px 0 50px auto;
+  padding-left : 20px;
+  border-left  : 6px solid var(--app-text-secondary);
+  border-radius: 0%;
+
+  li {
+    margin         : 2em 0;
+    list-style-type: none;
+    position       : relative;
+
+    &.title {
+      margin        : 3em 0 0 0;
+      color         : var(--app-text-secondary);
+      letter-spacing: 0;
+    }
+
+    input {
+      display: none;
+    }
+
+    .date {
+      position  : absolute;
+      left      : -180px;
+      top       : 50%;
+      margin-top: -7px;
+      font-size : 14px;
+
+      label {
+        cursor: pointer;
+
+        &:hover {
+          color: var(--link-color-hover);
+        }
+
+        small {
+          color: var(--app-text-secondary);
+        }
+      }
+
+      // 手機版
+      @media screen and (max-width:576px) {
+        position: relative;
+        left    : 0;
+        top     : 0;
+      }
+    }
+
+    .circle {
+      width           : 14px;
+      height          : 14px;
+      position        : absolute;
+      left            : -30px;
+      top             : 50%;
+      margin-top      : -4px;
+      border          : 3px solid var(--app-text-secondary);
+      background-color: var(--c-primary);
+      border-radius   : 50%;
+
+
+      @media screen and (max-width:576px) {
+        top: 9px;
+      }
+    }
+
+    .school {
+      font-size: 20px;
+    }
+
+    .lab {
+      text-decoration: underline;
+      margin         : 11px 0 10px;
+      display        : inline-block;
+      font-size      : 20px;
+      cursor         : pointer;
+
+      &:hover {
+        color: var(--link-color-hover);
+      }
+    }
+
+    .content {
+      max-height   : 80px;
+      border       : 2px solid transparent;
+      padding      : 0px 10px 20px 0px;
+      border-radius: 10px;
+      position     : relative;
+      transition   : max-height 0.3s linear, border-color 0.3s linear, transform 0.2s ease, padding 0.3s linear;
+
+      p {
+        font-size  : 16px;
+        line-height: 32px;
+        color      : transparent;
+        transition : color 0.2s linear;
+
+        @media screen and (max-width:576px) {
+          font-size     : 14px;
+          // line-height: 32px;
+        }
+      }
+
+      small {
+        color: var(--app-text-secondary);
+      }
+
+      &:before,
+      &:after {
+        width   : 0px;
+        height  : 0px;
+        position: absolute;
+        top     : 50%;
+        right   : 100%;
+        border  : solid transparent;
+        content : "";
+      }
+
+      &:before {
+        border-width      : 15px;
+        border-right-color: inherit;
+        margin-top        : -12px;
+      }
+
+      &:after {
+        border-width         : 13px;
+        // border-right-color: #73818D;
+        margin-top           : -10px;
+      }
+    }
+  }
+
+  input:checked~.content {
+    // max-height  : 200px;
+    max-height  : fit-content;
+    padding-left: 20px;
+    border-color: var(--app-text-secondary);
+    transform   : translate3D(20px, 0, 0);
+
+    p {
+      color              : var(--app-text-primary);
+      transition-delay   : 0.3s;
+      transition-duration: 0.5s;
+    }
+
+    @media screen and (max-width:576px) {
+      margin-top: 15px;
+    }
+  }
+
+  // 手機版
+  @media screen and (max-width:576px) {
+    max-width: 100%;
+    margin   : 50px 0;
+  }
+}

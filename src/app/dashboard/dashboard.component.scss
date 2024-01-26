@@ -1,5 +1,5 @@
 :host {
-  display : block;
+  display: block;
 }
 
 .app {
@@ -17,37 +17,47 @@
     justify-content : space-between;
     align-items     : center;
     width           : 100%;
-    padding         : 16px 24px;
+    padding         : 1.2rem 8%;
     position        : relative;
 
     &-logo {
-      font-size     : 24px;
       line-height   : 24px;
-      // font-weight: 600;
-      // font-family: 'Shadows Into Light', cursive;
-      // font-family: 'Suez One', serif;
-      // font-family: 'Pattaya', sans-serif;
-      font-family   : 'Gaegu', cursive;
+      font-family   : Cinzel;
+      font-weight   : 600;
+      font-size     : 0.9rem;
+      letter-spacing: 2px;
       cursor        : default;
     }
 
     &-navigation {
       .nav-list {
-        display   : flex;
-        flex-wrap : wrap;
-        gap       : 1.25rem;
-        margin    : 0;
-        padding   : 0;
-        list-style: none;
+        font-size     : 0.9rem;
+        letter-spacing: 2px;
+        display       : flex;
+        flex-wrap     : wrap;
+        gap           : 1.25rem;
+        margin        : 0;
+        padding       : 0;
+        list-style    : none;
       }
 
       .nav-list li {
         flex-grow: 1;
 
         a {
-          &.active {
-            color        : var(--link-color-active);
-            border-bottom: 1px solid var(--link-color-active);
+
+          &::after {
+            content      : "";
+            display      : block;
+            width        : 0px;
+            height       : 0.4rem;
+            border-bottom: 3px solid var(--link-color);
+            transition   : width 0.4s ease 0s, opacity;
+          }
+
+          &.active::after,
+          &:hover::after {
+            width: 2rem;
           }
         }
       }
@@ -58,7 +68,7 @@
 .contact-box {
   position: fixed;
   bottom  : 3.5rem;
-  left    : 2rem;
+  right   : 2rem;
 
   a {
     &:hover {
@@ -68,14 +78,14 @@
 }
 
 footer {
-  display         : flex;
-  -webkit-box-pack: center;
-  justify-content : center;
-  letter-spacing  : 1px;
-  font-size       : 12px;
-  color           : var(--app-text-secondary);
-  padding         : 1rem 0px 2rem;
+  display            : flex;
+  -webkit-box-pack   : center;
+  justify-content    : center;
+  letter-spacing     : 1px;
+  font-size          : 12px;
+  color              : var(--app-text-secondary);
+  padding            : 1rem 0px 2rem;
   // position        : absolute;
   // bottom          : 0;
-  width           : 100%;
+  width              : 100%;
 }

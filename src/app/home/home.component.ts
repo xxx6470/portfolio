@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, NgZone } from '@angular/core';
 import * as moment from 'moment';
 
 import { ThemeService } from "src/app/_service/theme.service";
@@ -37,6 +37,10 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  isIntersecting(status: boolean, index: number) {
+    console.log('Element #' + index + ' is intersecting ' + status)
   }
 
   changeTheme(name: string) {

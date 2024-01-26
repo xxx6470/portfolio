@@ -36,6 +36,10 @@
   --link-color-hover : var(--c-black);
   --link-color-active: var(--c-black);
 
+
+  --dividing-line: #b1bfca;
+  --box-shadow   : #c7c7c7;
+
   --theme-default: #e3f2fd;
   --theme-green  : #b6c2b7;
   --theme-dark   : #212121;
@@ -58,6 +62,9 @@
     --link-color       : #002f6c;
     --link-color-hover : #4f83cc;
     --link-color-active: #002f6c;
+
+    --dividing-line: #b1bfca;
+    --box-shadow   : #c7c7c7;
   }
 
   &-green {
@@ -76,6 +83,9 @@
     --link-color       : #000000;
     --link-color-hover : #00701a;
     --link-color-active: #003300;
+
+    --dividing-line: #b6c2b7;
+    --box-shadow   : #c7c7c7;
   }
 
   &-dark {
@@ -94,6 +104,9 @@
     --link-color       : #fafafa;
     --link-color-hover : #bdbdbd;
     --link-color-active: #fafafa;
+
+    --dividing-line: #9c9c9c;
+    --box-shadow   : #8293b7;
   }
 }
 
@@ -118,9 +131,10 @@ html {
 body {
   background-color: var(--app-background);
   color           : var(--app-text-primary);
-  font-family     : "Be Vietnam Pro", sans-serif;
+  font-family     : "Roboto", "Noto Sans TC", sans-serif;
   font-weight     : 400;
   font-size       : 1em;
+  letter-spacing  : 1px;
   line-height     : 1.5;
   min-height      : 100vh;
   display         : flex;
@@ -132,8 +146,8 @@ a {
   text-decoration: none;
 
   &:hover {
-    color        : var(--link-color-hover);
-    border-bottom: 1px solid var(--link-color-hover);
+    color           : var(--link-color-hover);
+    // border-bottom: 1px solid var(--link-color-hover);
   }
 }
 

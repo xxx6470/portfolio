@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+/* Directives */
+import { ObserveElementDirective } from 'src/app/_directives/observe-element.directive'
+
 import { ShareModule } from 'src/app/_share/share.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +15,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ObserveElementDirective,
     DashboardComponent,
     HomeComponent,
     PortfolioComponent
