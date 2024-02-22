@@ -29,3 +29,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deploy
 
 `ng build --prod=true --outputPath=docs --baseHref=/portfolio/`
+
+
+## i18n
+
+`npm install @ngx-translate/core --save`
+`npm install @ngx-translate/http-loader --save`
