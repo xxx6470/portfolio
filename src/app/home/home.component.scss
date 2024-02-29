@@ -63,6 +63,7 @@
       .skills {
         &-title {
           color      : var(--app-text-secondary);
+          font-weight: bold;
           font-size  : 22px;
           line-height: 58px;
         }
@@ -93,12 +94,18 @@
         padding-top: 1rem;
         border-top : 1px solid var(--dividing-line);
 
-        &>span {
+        &>div {
+          display     : block;
           position    : relative;
           padding-left: 16px;
+
+          &>a {
+            cursor         : pointer;
+            text-decoration: underline;
+          }
         }
 
-        &>span:before {
+        &>div:before {
           content            : "";
           position           : absolute;
           left               : 0px;
@@ -109,7 +116,7 @@
           border-bottom-color: var(--app-text-secondary);
         }
 
-        &>span:after {
+        &>div:after {
           content         : "";
           position        : absolute;
           left            : 0px;
@@ -120,7 +127,11 @@
           border-top-color: var(--app-text-secondary);
         }
 
-        &>p {
+        &>h2 {
+          margin: 12px 0;
+        }
+
+        &>ul {
           margin-top : 8px;
           margin-left: 16px;
           font-size  : 14px;

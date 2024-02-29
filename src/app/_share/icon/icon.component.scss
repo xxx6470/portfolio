@@ -5,6 +5,12 @@
     fill: var(--c-black);
   }
 
+  &.nav-link {
+    svg {
+      fill: var(--nav-list-link-color);
+    }
+  }
+
   &.link {
     svg {
       fill: var(--link-color);

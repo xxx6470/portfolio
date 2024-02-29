@@ -4,15 +4,28 @@
     <div class="app-header-navigation">
       <ul class="nav-list">
         <li>
-          <a [routerLink]="''" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Home</a>
+          <a [routerLink]="''" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">
+            {{ 'Home' | translate }}
+          </a>
         </li>
         <li>
-          <a [routerLink]="['/portfolio']" [routerLinkActiveOptions]="{ exact: true }"
-            routerLinkActive="active">Portfolio</a>
+          <a [routerLink]="['/portfolio']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">
+            {{ 'Portfolio' | translate }}
+          </a>
         </li>
         <li>
-          <a [routerLink]="['/contact']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Contact</a>
+          <a [routerLink]="['/contact']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">
+            {{ 'Contact' | translate }}
+          </a>
         </li>
+        <a [matMenuTriggerFor]="menu">
+          <icon-language class="s26 nav-link"></icon-language>
+        </a>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item *ngFor="let language of languageList" (click)="changeSiteLanguage(language.code)">
+            {{ language.label }}
+          </button>
+        </mat-menu>
       </ul>
     </div>
   </div>

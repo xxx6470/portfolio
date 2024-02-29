@@ -17,7 +17,7 @@
     justify-content : space-between;
     align-items     : center;
     width           : 100%;
-    padding         : 1.2rem 8%;
+    padding         : 1.2rem 2% 1.2rem 8%;
     position        : relative;
 
     &-logo {
@@ -45,13 +45,19 @@
         flex-grow: 1;
 
         a {
+          color          : var(--nav-list-link-color);
+          text-decoration: none;
+
+          &:hover {
+            color: var(--nav-list-link-color-hover);
+          }
 
           &::after {
             content      : "";
             display      : block;
             width        : 0px;
             height       : 0.4rem;
-            border-bottom: 3px solid var(--link-color);
+            border-bottom: 3px solid var(--nav-list-link-color);
             transition   : width 0.4s ease 0s, opacity;
           }
 

@@ -1,3 +1,67 @@
 {
-  "Home": "Home"
+  "Home": "Home",
+  "Portfolio": "Portfolio",
+  "Contact": "Contact",
+  "Theme_Switching": "Theme Switching",
+  "SPECIALITY": "SPECIALITY",
+  "Frontend": "Frontend",
+  "Backend": "Backend",
+  "Others": "Others",
+  "Work_Experience": "Work Experience",
+  "Education": "Education",
+  "Cloud_Service_Platform": "Cloud Service Platform",
+  "Exhibition_and_event": "Exhibition and event",
+  "Work_content": "Work content",
+  "SingularWings": {
+    "Beatinfo_Health_Console_System": "Beatinfo Health Console System",
+    "Health_Center_Console_System": "Health Center Console System",
+    "Exhibition_and_event1": "The system is installed in a care center in Slovakia Košice.",
+    "Exhibition_and_event2": "HEALTHCARE EXPO TAIWAN",
+    "Exhibition_and_event3": "MEDICA Fair ground Düsseldorf",
+    "Beatinfo_Health": {
+      "memo1": "Enables caregivers to easily monitor clients' health conditions and provide notifications.",
+      "memo2": "BEATINFO Web Console helps companies and caregivers to monitor groups of people in real-time, see who is online and receive instant notifications.",
+      "memo3": "BEATINFO Web Console allows users to view detailed physiological information for every single user, in real-time.",
+      "memo4": "BEATINFO Web Console provides health history for every user. It is possible to browse it by the hour, day month, or week and also generate health reports.",
+      "memo5": "Use physiological information data into detailed report information",
+      "title1": "Group Monitoring",
+      "title2": "Real-time physiological details",
+      "title3": "Health history",
+      "title4": "Generate report"
+    },
+    "work_content": {
+      "1": "Frontend build with Angular, Material-UI",
+      "2": "Use Firebase for authentication.",
+      "3": "Localization build with i18n (中 / English / 日文 / Slovensko etc.)",
+      "4": "Created real-time dashboard for network monitoring services with socket.io",
+      "5": "Customized charts and binded data with ECharts.js.",
+      "6": "Embed Google Map with Google Map API.",
+      "7": "Backend build with python Flask.",
+      "8": "Use MQTT and WebSocket server to communicate in real time.",
+      "9": "Database use MySQL and MongoDB."
+    }
+  },
+  "GreenGold": {
+    "Dealer_Backend_Management_System": "Dealer Backend Management System",
+    "Dealer_Member_Shopping_System": "Dealer Member Shopping System",
+    "work_content": {
+      "1": "System build with Laravel, Bootstrap",
+      "2": "Use an email and sms API",
+      "3": "Database use MySQL",
+      "4": "Using GCP, Linux, Nginx"
+    }
+  },
+  "HiPower": {
+    "Traffic_Flow_System": "Traffic Flow System",
+    "Rockfall_Monitoring_System": "Rockfall Monitoring System",
+    "Pedestrian_Flow_System": "Pedestrian Flow System",
+    "Exhibition_and_event1": "AIoT Taiwan",
+    "work_content": {
+      "1": "Build with HTML, CSS, jQuery, Bootstrap, php, MySQL",
+      "2": "Embed Google Map with Google Map API.",
+      "3": "Embed IPCam, Real Time Streaming Protocol",
+      "4": "Develop LINE Bot with LINE API",
+      "5": "Customized charts and binded data with Chart.js."
+    }
+  }
 }

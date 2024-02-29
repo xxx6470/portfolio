@@ -1,6 +1,8 @@
 <div class="change-theme">
   <div class="change-theme-info">
-    <span>Theme Switching</span>
+    <span>
+      {{ 'Theme_Switching' | translate }}
+    </span>
     <!-- Choose your own theme preference -->
   </div>
   <div class="change-theme-items">
@@ -13,25 +15,29 @@
 <!-- 專業 -->
 <div class="card bg-secondary">
   <div class="title text-center">
-    SPECIALITY
+    {{ 'SPECIALITY' | translate }}
   </div>
   <div class="row animate fadeIn">
     <!-- 前端 -->
     <div class="col">
-      <div class="skills-title">Frontend</div>
+      <div class="skills-title">
+        {{ 'Frontend' | translate }}
+      </div>
       <div class="skills-items">
         <ul>
           <li>HTML</li>
           <li>CSS / SCSS</li>
           <li>JavaScripe / TypeScript</li>
           <li>jQuery</li>
-          <li>Angular12+</li>
+          <li>Angular</li>
         </ul>
       </div>
     </div>
     <!-- 後端 -->
     <div class="col">
-      <div class="skills-title">Backend</div>
+      <div class="skills-title">
+        {{ 'Backend' | translate }}
+      </div>
       <div class="skills-items">
         <ul>
           <li>PHP</li>
@@ -39,50 +45,90 @@
           <li>Python</li>
           <li>Flask</li>
           <li>MySQL</li>
+          <li>MongoDB</li>
         </ul>
       </div>
     </div>
     <!-- 其他 -->
     <div class="col">
-      <div class="skills-title">Others</div>
+      <div class="skills-title">
+        {{ 'Others' | translate }}
+      </div>
       <div class="skills-items">
         <ul>
+          <li>Git</li>
+          <li>Nginx / Apache</li>
+          <li>GCP</li>
           <li>Bootstrap</li>
           <li>MaterialUI</li>
-          <li>Git</li>
-          <li>Apache / Nginx</li>
-          <li>GCP</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 
-<!-- About me -->
 <div class="card">
+  <!-- 學歷 -->
   <div class="title">
-    Work Experience
+    {{ 'Education' | translate }}
   </div>
-  <small class="border-left">{{workExperienceTime('2017-08-01')}}</small>
+  <div class="content animate fadeIn">
+    <div class="content--card">
+      <div class="school">
+        <span>National Sun Yat-Sen University</span><br>
+        <small class="border-left">Bachelor of Information Management</small><br>
+        <span class="time">2013-09 ~ 2017-06</span>
+      </div>
+    </div>
+  </div>
+  <!-- 工作經驗 -->
+  <div class="title">
+    {{ 'Work_Experience' | translate }}
+  </div>
+  <small class="border-left">{{ workExperienceTime('2017-08-01') }}</small>
   <div class="content animate fadeIn">
     <div class="content--card">
       <div class="company">
-        <span>Singular Wings</span><br>
+        <span>SingularWings</span><br>
         <small class="border-left">Full Stack Software Engineer</small><br>
         <span class="time">2021-06 ~ Present</span><br>
-        <small class="border-left">{{workExperienceTime('2021-06-01')}}</small><br>
+        <small class="border-left">{{ workExperienceTime('2021-06-01') }}</small><br>
       </div>
       <div class="responsibility">
-        <span>HEALTHCARE EXPO TAIWAN DECEMBER 02-05 2021 (台灣醫療科技展 12/2-12/5 2021)</span><br>
-        <span>Group Health Monitoring(群體生理監護系統)</span><br>
-        <p>
-          Build with Angular12、Material-UI<br>
-          Use firebase for authentication<br>
-          Build i18n (中 / English)<br>
-          Created real-time dashboard for network monitoring services with socket.io<br>
-          Customized charts and binded data with ECharts.js.<br>
-          Embed Google Map with Google Map API. <br>
-        </p>
+        <h2>{{ 'Cloud_Service_Platform' | translate }}</h2>
+        <div>
+          <a (click)="openSwmConsoleDialog()">
+            {{ 'SingularWings.Beatinfo_Health_Console_System' | translate }}
+          </a>
+        </div>
+        <div>
+          {{ 'SingularWings.Health_Center_Console_System' | translate }}
+        </div>
+        <h2>{{ 'Exhibition_and_event' | translate }}</h2>
+        <div>
+          2023 DEC.<br>
+          {{ 'SingularWings.Exhibition_and_event1' | translate }}
+        </div>
+        <div>
+          2023 NOV.<br>
+          {{ 'SingularWings.Exhibition_and_event2' | translate }}<br>
+          2022 NOV.<br>
+          {{ 'SingularWings.Exhibition_and_event3' | translate }}<br>
+          2021 DEC.<br>
+          {{ 'SingularWings.Exhibition_and_event2' | translate }}
+        </div>
+        <h2>{{ 'Work_content' | translate }}</h2>
+        <ul>
+          <li>{{ 'SingularWings.work_content.1' | translate }}</li>
+          <li>{{ 'SingularWings.work_content.2' | translate }}</li>
+          <li>{{ 'SingularWings.work_content.3' | translate }}</li>
+          <li>{{ 'SingularWings.work_content.4' | translate }}</li>
+          <li>{{ 'SingularWings.work_content.5' | translate }}</li>
+          <li>{{ 'SingularWings.work_content.6' | translate }}</li>
+          <li>{{ 'SingularWings.work_content.7' | translate }}</li>
+          <li>{{ 'SingularWings.work_content.8' | translate }}</li>
+          <li>{{ 'SingularWings.work_content.9' | translate }}</li>
+        </ul>
       </div>
     </div>
 
@@ -91,15 +137,23 @@
         <span>GreenGold</span><br>
         <small class="border-left">Backend Developer</small><br>
         <span class="time">2019-03 ~ 2021-04</span><br>
-        <small class="border-left">{{workExperienceTime('2019-03-01','2021-04-15')}}</small>
+        <small class="border-left">{{ workExperienceTime('2019-03-01','2021-04-15') }}</small>
       </div>
       <div class="responsibility">
-        <span>Dealer Management System (經銷商管理系統)</span><br>
-        <p>
-          Build with Laravel、Bootstrap<br>
-          Use an email and sms API <br>
-          Using GCP, Linux, Nginx, MySQL<br>
-        </p>
+        <h2>{{ 'Cloud_Service_Platform' | translate }}</h2>
+        <div>
+          {{ 'GreenGold.Dealer_Backend_Management_System' | translate }}
+        </div>
+        <div>
+          {{ 'GreenGold.Dealer_Member_Shopping_System' | translate }}
+        </div>
+        <h2>{{ 'Work_content' | translate }}</h2>
+        <ul>
+          <li>{{ 'GreenGold.work_content.1' | translate }}</li>
+          <li>{{ 'GreenGold.work_content.2' | translate }}</li>
+          <li>{{ 'GreenGold.work_content.3' | translate }}</li>
+          <li>{{ 'GreenGold.work_content.4' | translate }}</li>
+        </ul>
       </div>
     </div>
 
@@ -108,37 +162,33 @@
         <span>Hi-Power Solution Group</span><br>
         <small class="border-left">Full Stack Software Engineer</small><br>
         <span class="time">2017-08 ~ 2019-01</span><br>
-        <small class="border-left">{{workExperienceTime('2017-08-01','2019-01-15')}}</small>
+        <small class="border-left">{{ workExperienceTime('2017-08-01','2019-01-15') }}</small>
       </div>
       <div class="responsibility">
-        <span>AIoT Taiwan October 09-12 2018 (台灣國際人工智慧暨物聯網展 10/9~10/12 2018)</span><br>
-        <span>Traffic Flow System (車流系統)</span><br>
-        <span>Rockfall Monitoring System (落石監控系統)</span><br>
-        <span>Pedestrian Flow System (人流系統)</span><br>
-        <p>
-          Build with HTML, CSS, jQuery, Bootstrap, php, MySQL<br>
-          Embed Google Map with Google Map API. <br>
-          Embed IPCam, Real Time Streaming Protocol(RTSP即時訊息協定)<br>
-          Develop LINE Bot with LINE API<br>
-          Customized charts and binded data with Chart.js.<br>
-        </p>
+        <h2>{{ 'Cloud_Service_Platform' | translate }}</h2>
+        <div>
+          {{ 'HiPower.Traffic_Flow_System' | translate }}
+        </div>
+        <div>
+          {{ 'HiPower.Rockfall_Monitoring_System' | translate }}
+        </div>
+        <div>
+          {{ 'HiPower.Pedestrian_Flow_System' | translate }}
+        </div>
+        <h2>{{ 'Exhibition_and_event' | translate }}</h2>
+        <div>
+          2018 Oct.<br>
+          {{ 'HiPower.Exhibition_and_event1' | translate }}
+        </div>
+        <h2>{{ 'Work_content' | translate }}</h2>
+        <ul>
+          <li>{{ 'HiPower.work_content.1' | translate }}</li>
+          <li>{{ 'HiPower.work_content.2' | translate }}</li>
+          <li>{{ 'HiPower.work_content.3' | translate }}</li>
+          <li>{{ 'HiPower.work_content.4' | translate }}</li>
+          <li>{{ 'HiPower.work_content.5' | translate }}</li>
+        </ul>
       </div>
     </div>
-
-    <div class="title">
-      Education
-    </div>
-
-    <div class="content animate fadeIn">
-      <div class="school">
-        <span>National Sun Yat-Sen University</span><br>
-        <small class="border-left">Bachelor of Information Management</small><br>
-        <span class="time">2013-09 ~ 2017-06</span>
-      </div>
-    </div>
-    <!-- <span class="circle" appObserveElement #intersection3="intersection"
-      (isIntersecting)="isIntersecting($event, 3)"></span>
-    <div class="content" [class.content--is-intersecting]="intersection3._isIntersecting"></div> -->
-
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, NgZone } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import * as moment from 'moment';
 
 import { ThemeService } from "src/app/_service/theme.service";
@@ -11,6 +12,7 @@ import { ThemeService } from "src/app/_service/theme.service";
 export class HomeComponent implements OnInit {
 
   constructor(
+    public dialog: MatDialog,
     private themeService: ThemeService,
   ) { }
 
@@ -46,4 +48,15 @@ export class HomeComponent implements OnInit {
   changeTheme(name: string) {
     this.themeService.setTheme(name);
   }
+
+  openSwmConsoleDialog() {
+    this.dialog.open(SwmConsoleDialogComponent);
+  }
 }
+
+@Component({
+  selector: 'app-swm-console-dialog',
+  templateUrl: './work-experience/swm-console-dialog.component.html',
+  styleUrls: ['./work-experience/swm-console-dialog.component.scss']
+})
+export class SwmConsoleDialogComponent { }

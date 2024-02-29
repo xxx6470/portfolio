@@ -1,0 +1,67 @@
+{
+  "Home": "首頁",
+  "Portfolio": "作品集",
+  "Contact": "聯絡",
+  "Theme_Switching": "主題切換",
+  "SPECIALITY": "專業技能",
+  "Frontend": "前端",
+  "Backend": "後端",
+  "Others": "其他",
+  "Work_Experience": "工作經驗",
+  "Education": "學歷",
+  "Cloud_Service_Platform": "雲端平台",
+  "Exhibition_and_event": "展覽與活動",
+  "Work_content": "工作內容",
+  "SingularWings": {
+    "Beatinfo_Health_Console_System": "群體生理監護系統",
+    "Health_Center_Console_System": "照護中心監護系統",
+    "Exhibition_and_event1": "斯洛伐克的安養中心建置遠距照護系統",
+    "Exhibition_and_event2": "台灣醫療科技展",
+    "Exhibition_and_event3": "德國杜塞道夫醫療器材展",
+    "Beatinfo_Health": {
+      "memo1": "透過必應健康雲端平台，企業或是醫療照護機構可以迅速即時地掌握群組成員的生理資訊，當數值提高時可以通知群組成員或照護人員，也可以串接照護服務以提供即時的服務。",
+      "memo2": "群組經理可以依據權限，查看群組資訊、即時生理資訊以及提醒。",
+      "memo3": "生理資訊可以被即時的查看，以便安排人力。",
+      "memo4": "詳細地記錄著每分鐘的生理資訊，透過月、週、日、小時的區間能夠查看生理資訊紀錄，更能夠了解身心狀態的變化。",
+      "memo5": "將生理資訊數據畫成詳細的各種報告資訊，產出PDF",
+      "title1": "群組關照",
+      "title2": "即時生理訊號",
+      "title3": "生理資訊歷史紀錄",
+      "title4": "報告產生"
+    },
+    "work_content": {
+      "1": "前端使用 Angular, Material-UI",
+      "2": "使用 Firebase 進行身份驗證",
+      "3": "多國語系 i18n (中 / English / 日文 / Slovensko etc.)",
+      "4": "客戶端使用 socket.io 建立即時資料傳送服務",
+      "5": "客製化圖形繪製使用 ECharts.js.",
+      "6": "使用 Google Map API 嵌入 Google 地圖",
+      "7": "後端使用 python Flask.",
+      "8": "伺服器端使用 MQTT 及 WebSocket 建立即時溝通",
+      "9": "資料庫使用 MySQL 及 MongoDB."
+    }
+  },
+  "GreenGold": {
+    "Dealer_Backend_Management_System": "經銷後台管理系統",
+    "Dealer_Member_Shopping_System": "經銷會員購物系統",
+    "work_content": {
+      "1": "系統使用 Laravel, Bootstrap",
+      "2": "串接 email 及 sms API",
+      "3": "資料庫使用 MySQL",
+      "4": "部署在 GCP, Linux, Nginx"
+    }
+  },
+  "HiPower": {
+    "Traffic_Flow_System": "車流系統",
+    "Rockfall_Monitoring_System": "落石監控系統",
+    "Pedestrian_Flow_System": "人流系統",
+    "Exhibition_and_event1": "台灣國際人工智慧暨物聯網展",
+    "work_content": {
+      "1": "系統使用 HTML, CSS, jQuery, Bootstrap, php, MySQL",
+      "2": "使用 Google Map API 嵌入 Google 地圖",
+      "3": "串接 IPCam, RTSP即時訊息協定",
+      "4": "開發 LINE Bot 串接 LINE API",
+      "5": "客製化圖形繪製使用 Chart.js"
+    }
+  }
+}

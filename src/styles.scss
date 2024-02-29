@@ -23,6 +23,7 @@
   --c-light  : #ffffff;
   --c-dark   : #b1bfca;
   --c-black  : #000000;
+  --c-white  : #ffffff;
 
   --app-background       : var(--c-light);
   --app-header-background: var(--c-primary);
@@ -32,9 +33,15 @@
   --app-text-secondary: var(--c-dark);
   --app-text-tertiary : var(--c-light);
 
-  --link-color       : var(--c-black);
-  --link-color-hover : var(--c-black);
-  --link-color-active: var(--c-black);
+  --link-color                : var(--c-black);
+  --link-color-hover          : var(--c-black);
+  --link-color-active         : var(--c-black);
+  --nav-list-link-color       : var(--c-black);
+  --nav-list-link-color-hover : var(--c-black);
+  --nav-list-link-color-active: var(--c-black);
+
+  --dark-primary-text : #212121;
+  --light-primary-text: #e3f2fd;
 
 
   --dividing-line: #b1bfca;
@@ -56,12 +63,15 @@
     --app-header-background   : #e3f2fd;
 
     --app-text-primary  : #000000;
-    --app-text-secondary: #003c8f;
+    --app-text-secondary: #616161;
     --app-text-tertiary : #ffffff;
 
-    --link-color       : #002f6c;
-    --link-color-hover : #4f83cc;
-    --link-color-active: #002f6c;
+    --link-color                : #002f6c;
+    --link-color-hover          : #4f83cc;
+    --link-color-active         : #002f6c;
+    --nav-list-link-color       : #002f6c;
+    --nav-list-link-color-hover : #4f83cc;
+    --nav-list-link-color-active: #002f6c;
 
     --dividing-line: #b1bfca;
     --box-shadow   : #c7c7c7;
@@ -80,9 +90,12 @@
     --app-text-secondary: #003300;
     --app-text-tertiary : #00701a;
 
-    --link-color       : #000000;
-    --link-color-hover : #00701a;
-    --link-color-active: #003300;
+    --link-color                : #2962FF;
+    --link-color-hover          : #448AFF;
+    --link-color-active         : #2979FF;
+    --nav-list-link-color       : #000000;
+    --nav-list-link-color-hover : #00701a;
+    --nav-list-link-color-active: #003300;
 
     --dividing-line: #b6c2b7;
     --box-shadow   : #c7c7c7;
@@ -101,12 +114,15 @@
     --app-text-secondary: #bdbdbd;
     --app-text-tertiary : #000000;
 
-    --link-color       : #fafafa;
-    --link-color-hover : #bdbdbd;
-    --link-color-active: #fafafa;
+    --link-color                : #90CAF9;
+    --link-color-hover          : #BBDEFB;
+    --link-color-active         : #64B5F6;
+    --nav-list-link-color       : #fafafa;
+    --nav-list-link-color-hover : #bdbdbd;
+    --nav-list-link-color-active: #fafafa;
 
     --dividing-line: #9c9c9c;
-    --box-shadow   : #8293b7;
+    --box-shadow   : #F5F5F5;
   }
 }
 
@@ -142,12 +158,12 @@ body {
 }
 
 a {
+  cursor         : pointer;
+  text-decoration: underline;
   color          : var(--link-color);
-  text-decoration: none;
 
   &:hover {
-    color           : var(--link-color-hover);
-    // border-bottom: 1px solid var(--link-color-hover);
+    color: var(--link-color-hover);
   }
 }
 
