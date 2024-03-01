@@ -63,5 +63,12 @@
       "4": "開發 LINE Bot 串接 LINE API",
       "5": "客製化圖形繪製使用 Chart.js"
     }
-  }
+  },
+  "Portfolio_Website": "作品集",
+  "Personal_online_portfolio": "個人線上作品集",
+  "Color_Theme": "主題顏色",
+  "Color_Theme_content": "網站可使用不同的主題顏色",
+  "Internationalization": "國際化",
+  "Internationalization_content": "國際化 (i18n) 是調整軟體以支援多種語言的過程, 在我的網站使用 <a href=\"https://github.com/ngx-translate/core\" target=\"_blank\">`ngx-translate`</a> 函式庫.",
+  "Responsive_Web_Design": "響應式網頁設計"
 }

@@ -63,5 +63,12 @@
       "4": "Develop LINE Bot with LINE API",
       "5": "Customized charts and binded data with Chart.js."
     }
-  }
+  },
+  "Portfolio_Website": "Portfolio Website",
+  "Personal_online_portfolio": "Personal online portfolio",
+  "Color_Theme": "Color Theme",
+  "Color_Theme_content": "Some colors can be used to theme different parts of website.",
+  "Internationalization": "Internationalization",
+  "Internationalization_content": "Internationalization (i18n) is the process of adapting software to support multiple languages. In my website using <a href=\"https://github.com/ngx-translate/core\" target=\"_blank\">`ngx-translate`</a> library.",
+  "Responsive_Web_Design": "Responsive Web Design"
 }
