@@ -24,13 +24,33 @@
         {{ 'Frontend' | translate }}
       </div>
       <div class="skills-items">
-        <ul>
-          <li>HTML</li>
-          <li>CSS / SCSS</li>
-          <li>JavaScripe / TypeScript</li>
-          <li>jQuery</li>
-          <li>Angular</li>
-        </ul>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-html.png">
+          <span>HTML</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-css.png">
+          <span>CSS</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-scss.png">
+          <span>SCSS</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-js.png">
+          <span>JavaScripe</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-ts.png">
+          <span>TypeScript</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-angular.png">
+          <span>Angular</span>
+        </div>
+        <div class="skills-items--item">
+          <img style="height: 35px;" src="assets/img/icons-jquery.png">
+        </div>
       </div>
     </div>
     <!-- 後端 -->
@@ -39,14 +59,29 @@
         {{ 'Backend' | translate }}
       </div>
       <div class="skills-items">
-        <ul>
-          <li>PHP</li>
-          <li>Laravel</li>
-          <li>Python</li>
-          <li>Flask</li>
-          <li>MySQL</li>
-          <li>MongoDB</li>
-        </ul>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-php.png">
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-laravel.png">
+          <span>Laravel</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-python.png">
+          <span>Python</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-flask.png">
+          <span>Flask</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-mysql.png">
+          <span>MySQL</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-mongodb.png">
+          <span>MongoDB</span>
+        </div>
       </div>
     </div>
     <!-- 其他 -->
@@ -55,13 +90,28 @@
         {{ 'Others' | translate }}
       </div>
       <div class="skills-items">
-        <ul>
-          <li>Git</li>
-          <li>Nginx / Apache</li>
-          <li>GCP</li>
-          <li>Bootstrap</li>
-          <li>MaterialUI</li>
-        </ul>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-nginx.svg">
+        </div>
+        <div class="skills-items--item">
+          <img style="height: 68px;" src="assets/img/icons-apache.png">
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-github.png">
+          <span>Git</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-google-cloud-platform.png">
+          <span>GCP</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-bootstrap.png">
+          <span>Bootstrap</span>
+        </div>
+        <div class="skills-items--item">
+          <img src="assets/img/icons-material.png">
+          <span>MaterialUI</span>
+        </div>
       </div>
     </div>
   </div>
@@ -74,10 +124,15 @@
   </div>
   <div class="content animate fadeIn">
     <div class="content--card">
-      <div class="school">
-        <span>National Sun Yat-Sen University</span><br>
-        <small class="border-left">Bachelor of Information Management</small><br>
-        <span class="time">2013-09 ~ 2017-06</span>
+      <div class="content--card--title">
+        <div class="content--card--title--img">
+          <img src="assets/img/nsysu.svg">
+        </div>
+        <div class="content--card--title--text">
+          <span>National Sun Yat-Sen University</span><br>
+          <small class="border-left">Bachelor of Information Management</small><br>
+          <span class="time">2013-09 ~ 2017-06</span>
+        </div>
       </div>
     </div>
   </div>
@@ -88,11 +143,16 @@
   <small class="border-left">{{ workExperienceTime('2017-08-01') }}</small>
   <div class="content animate fadeIn">
     <div class="content--card">
-      <div class="company">
-        <span>SingularWings</span><br>
-        <small class="border-left">Full Stack Software Engineer</small><br>
-        <span class="time">2021-06 ~ Present</span><br>
-        <small class="border-left">{{ workExperienceTime('2021-06-01') }}</small><br>
+      <div class="content--card--title">
+        <div class="content--card--title--img">
+          <img src="assets/img/singularwings.png">
+        </div>
+        <div class="content--card--title--text">
+          <span>SingularWings</span><br>
+          <small class="border-left">Full Stack Software Engineer</small><br>
+          <span class="time">2021-06 ~ Present</span><br>
+          <small class="border-left">{{ workExperienceTime('2021-06-01') }}</small>
+        </div>
       </div>
       <div class="responsibility">
         <h2>{{ 'Cloud_Service_Platform' | translate }}</h2>
@@ -133,11 +193,16 @@
     </div>
 
     <div class="content--card">
-      <div class="company">
-        <span>GreenGold</span><br>
-        <small class="border-left">Backend Developer</small><br>
-        <span class="time">2019-03 ~ 2021-04</span><br>
-        <small class="border-left">{{ workExperienceTime('2019-03-01','2021-04-15') }}</small>
+      <div class="content--card--title">
+        <div class="content--card--title--img">
+          <img src="assets/img/gdtw.jpeg">
+        </div>
+        <div class="content--card--title--text">
+          <span>GreenGold</span><br>
+          <small class="border-left">Backend Developer</small><br>
+          <span class="time">2019-03 ~ 2021-04</span><br>
+          <small class="border-left">{{ workExperienceTime('2019-03-01','2021-04-15') }}</small>
+        </div>
       </div>
       <div class="responsibility">
         <h2>{{ 'Cloud_Service_Platform' | translate }}</h2>
@@ -158,11 +223,16 @@
     </div>
 
     <div class="content--card">
-      <div class="company">
-        <span>Hi-Power Solution Group</span><br>
-        <small class="border-left">Full Stack Software Engineer</small><br>
-        <span class="time">2017-08 ~ 2019-01</span><br>
-        <small class="border-left">{{ workExperienceTime('2017-08-01','2019-01-15') }}</small>
+      <div class="content--card--title">
+        <div class="content--card--title--img">
+          <img src="assets/img/Hi-Power.gif">
+        </div>
+        <div class="content--card--title--text">
+          <span>Hi-Power Solution Group</span><br>
+          <small class="border-left">Full Stack Software Engineer</small><br>
+          <span class="time">2017-08 ~ 2019-01</span><br>
+          <small class="border-left">{{ workExperienceTime('2017-08-01','2019-01-15') }}</small>
+        </div>
       </div>
       <div class="responsibility">
         <h2>{{ 'Cloud_Service_Platform' | translate }}</h2>

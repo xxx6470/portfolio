@@ -36,6 +36,7 @@
   .content.flex {
     display       : flex;
     flex-direction: row;
+    gap           : 1rem;
 
     @media screen and (max-width:576px) {
       flex-direction: column;

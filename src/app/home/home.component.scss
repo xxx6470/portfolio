@@ -69,7 +69,23 @@
         }
 
         &-items {
-          line-height: 28px;
+          display       : flex;
+          flex-direction: column;
+
+          &--item {
+            display          : flex;
+            flex-direction   : row;
+            align-items      : center;
+            // border        : 1px solid var(--c-dark);
+            // border-radius : 10px;
+            width            : fit-content;
+            margin           : 8px 0;
+
+            img {
+              height : 50px;
+              padding: 3px 10px 3px 0;
+            }
+          }
         }
       }
     }
@@ -84,9 +100,36 @@
       position     : relative;
       max-height   : fit-content;
 
-      .company {
-        line-height: 30px;
-        font-weight: bold;
+      &--title {
+        font-weight   : bold;
+        margin-top    : 1rem;
+        display       : flex;
+        flex-direction: row;
+        gap           : 1.5rem;
+
+        @media screen and (max-width:576px) {
+          flex-direction: column;
+        }
+
+        &--img {
+          display    : flex;
+          align-items: center;
+          width      : 80px;
+
+          img {
+            display: block;
+            width  : 100%;
+          }
+        }
+
+        &--text {
+          line-height: 28px;
+
+          &>.time {
+            font-weight: normal;
+            font-size  : 14px;
+          }
+        }
       }
 
       .responsibility {
@@ -138,27 +181,13 @@
         }
       }
     }
-
-    .school {
-      margin-top: 1rem;
-
-      &>span {
-        font-weight: bold;
-      }
-
-      &>.time {
-        display    : block;
-        margin-top : 0.5rem;
-        font-weight: normal;
-        font-size  : 14px;
-      }
-    }
   }
 
-  .border-left {
-    border-left : solid 2px var(--app-text-secondary);
-    padding-left: 0.5rem;
-  }
+}
+
+.border-left {
+  border-left : solid 2px var(--app-text-secondary);
+  padding-left: 0.5rem;
 }
 
 small {
