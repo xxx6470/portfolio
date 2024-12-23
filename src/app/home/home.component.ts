@@ -50,7 +50,10 @@ export class HomeComponent implements OnInit {
   }
 
   openSwmConsoleDialog() {
-    this.dialog.open(SwmConsoleDialogComponent);
+    this.dialog.open(SwmConsoleDialogComponent, {
+      minHeight: '85vh',
+      maxHeight: '85vh',
+    });
   }
 }
 
