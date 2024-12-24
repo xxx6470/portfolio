@@ -38,25 +38,19 @@
       "memo8": "It keeps a detailed record of the changes in heart rate during exercise."
     },
     "work_content": {
-      "1": "Frontend build with Angular, Material-UI",
-      "2": "Use Firebase for authentication.",
+      "1": "Frontend library use Bootstrap, Material, ECharts.js",
+      "2": "Third-Party Integration : Embed Google Map with Google Map API, Firebase for authentication and Application push notification, LINE Messaging API.",
       "3": "Localization build with i18n (中 / English / 日文 / Slovensko etc.)",
       "4": "Created real-time dashboard for network monitoring services with socket.io",
-      "5": "Customized charts and binded data with ECharts.js.",
-      "6": "Embed Google Map with Google Map API.",
-      "7": "Backend build with python Flask.",
-      "8": "Use MQTT and WebSocket server to communicate in real time.",
-      "9": "Database use MySQL and MongoDB."
+      "5": "Use MQTT and WebSocket server to communicate in real time."
     }
   },
   "GreenGold": {
     "Dealer_Backend_Management_System": "Dealer Backend Management System",
     "Dealer_Member_Shopping_System": "Dealer Member Shopping System",
     "work_content": {
-      "1": "System build with Laravel, Bootstrap",
-      "2": "Use an email and sms API",
-      "3": "Database use MySQL",
-      "4": "Using GCP, Linux, Nginx"
+      "1": "Frontend library use Bootstrap",
+      "2": "Third-Party Integration : Email, SMS, Payment, Shipping"
     }
   },
   "HiPower": {
@@ -65,11 +59,9 @@
     "Pedestrian_Flow_System": "Pedestrian Flow System",
     "Exhibition_and_event1": "AIoT Taiwan",
     "work_content": {
-      "1": "Build with HTML, CSS, jQuery, Bootstrap, php, MySQL",
-      "2": "Embed Google Map with Google Map API.",
-      "3": "Embed IPCam, Real Time Streaming Protocol",
-      "4": "Develop LINE Bot with LINE API",
-      "5": "Customized charts and binded data with Chart.js."
+      "1": "Frontend library use Bootstrap, Chart.js",
+      "2": "Embed IPCam, Real Time Streaming Protocol",
+      "3": "Third-Party Integration : Embed Google Map with Google Map API, LINE Messaging API"
     }
   },
   "Portfolio_Website": "Portfolio Website",

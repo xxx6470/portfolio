@@ -38,25 +38,19 @@
       "memo8": "詳細地記錄著運動時的心率變化"
     },
     "work_content": {
-      "1": "前端使用 Angular, Material-UI",
-      "2": "使用 Firebase 進行身份驗證",
-      "3": "多國語系 i18n (中 / English / 日文 / Slovensko etc.)",
+      "1": "前端 library 使用 Bootstrap, Material, ECharts.js",
+      "2": "第三方串接 : Google Map API 嵌入 Google 地圖, Firebase 進行身份驗證和 app FCM 推播通知, LINE Messaging API",
+      "3": "多國語系 `i18n` (中 / English / 日文 / Slovensko etc.)",
       "4": "客戶端使用 socket.io 建立即時資料傳送服務",
-      "5": "客製化圖形繪製使用 ECharts.js.",
-      "6": "使用 Google Map API 嵌入 Google 地圖",
-      "7": "後端使用 python Flask.",
-      "8": "伺服器端使用 MQTT 及 WebSocket 建立即時溝通",
-      "9": "資料庫使用 MySQL 及 MongoDB."
+      "5": "伺服端使用 MQTT 及 WebSocket 建立即時溝通"
     }
   },
   "GreenGold": {
     "Dealer_Backend_Management_System": "經銷後台管理系統",
     "Dealer_Member_Shopping_System": "經銷會員購物系統",
     "work_content": {
-      "1": "系統使用 Laravel, Bootstrap",
-      "2": "串接 email 及 sms API",
-      "3": "資料庫使用 MySQL",
-      "4": "部署在 GCP, Linux, Nginx"
+      "1": "前端 library 使用 Bootstrap",
+      "2": "第三方串接 : Email, SMS, 金流, 物流"
     }
   },
   "HiPower": {
@@ -65,11 +59,9 @@
     "Pedestrian_Flow_System": "人流系統",
     "Exhibition_and_event1": "台灣國際人工智慧暨物聯網展",
     "work_content": {
-      "1": "系統使用 HTML, CSS, jQuery, Bootstrap, php, MySQL",
-      "2": "使用 Google Map API 嵌入 Google 地圖",
-      "3": "串接 IPCam, RTSP即時訊息協定",
-      "4": "開發 LINE Bot 串接 LINE API",
-      "5": "客製化圖形繪製使用 Chart.js"
+      "1": "前端 library 使用 Bootstrap, Chart.js",
+      "2": "串接 IPCam, RTSP即時訊息協定",
+      "3": "第三方串接 : Google Map API 嵌入 Google 地圖, LINE Messaging API"
     }
   },
   "Portfolio_Website": "作品集",
