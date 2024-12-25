@@ -12,7 +12,7 @@ import { ShareModule } from 'src/app/_share/share.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HomeComponent, SwmConsoleDialogComponent } from './home/home.component';
+import { HomeComponent, SwmConsoleDialogComponent, HipowerPedestrainFlowDialogComponent, HipowerRockfallDialogComponent, HipowerTrafficFlowDialogComponent, HipowerOtherDialogComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 // 建立TranslateHttpLoader作為語系檔的讀取器
@@ -26,7 +26,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ObserveElementDirective,
     DashboardComponent,
     HomeComponent,
-    SwmConsoleDialogComponent,
+    SwmConsoleDialogComponent, HipowerPedestrainFlowDialogComponent, HipowerRockfallDialogComponent, HipowerTrafficFlowDialogComponent, HipowerOtherDialogComponent,
     PortfolioComponent
   ],
   imports: [

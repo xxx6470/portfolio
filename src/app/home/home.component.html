@@ -210,10 +210,11 @@
           {{ 'GreenGold.Dealer_Member_Shopping_System' | translate }}
         </div>
         <h2>{{ 'Work_content' | translate }}</h2>
-        <small>Laravel / MySQL / GCP</small>
+        <small>Laravel / MySQL / Docker / GCP</small>
         <ul>
           <li>{{ 'GreenGold.work_content.1' | translate }}</li>
           <li>{{ 'GreenGold.work_content.2' | translate }}</li>
+          <li>{{ 'GreenGold.work_content.3' | translate }}</li>
         </ul>
       </div>
     </div>
@@ -233,13 +234,24 @@
       <div class="responsibility">
         <h2>{{ 'Cloud_Service_Platform' | translate }}</h2>
         <div>
-          {{ 'HiPower.Traffic_Flow_System' | translate }}
+          <a (click)="openHipowerTrafficFlowDialog()">
+            {{ 'HiPower.Traffic_Flow_System' | translate }}
+          </a>
         </div>
         <div>
-          {{ 'HiPower.Rockfall_Monitoring_System' | translate }}
+          <a (click)="openHipowerRockfallDialog()">
+            {{ 'HiPower.Rockfall_Monitoring_System' | translate }}
+          </a>
         </div>
         <div>
-          {{ 'HiPower.Pedestrian_Flow_System' | translate }}
+          <a (click)="openHipowerPedestrainFlowDialog()">
+            {{ 'HiPower.Pedestrian_Flow_System' | translate }}
+          </a>
+        </div>
+        <div>
+          <a (click)="openHipowerOtherDialog()">
+            {{ 'HiPower.Other' | translate }}
+          </a>
         </div>
         <!-- <h2>{{ 'Exhibition_and_event' | translate }}</h2>
         <div>
@@ -247,7 +259,7 @@
           {{ 'HiPower.Exhibition_and_event1' | translate }}
         </div> -->
         <h2>{{ 'Work_content' | translate }}</h2>
-        <small>HTML / jQuery / php / MySQL</small>
+        <small>HTML / jQuery / php / NodeJS / MySQL</small>
         <ul>
           <li>{{ 'HiPower.work_content.1' | translate }}</li>
           <li>{{ 'HiPower.work_content.2' | translate }}</li>

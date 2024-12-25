@@ -55,11 +55,69 @@ export class HomeComponent implements OnInit {
       maxHeight: '85vh',
     });
   }
+
+  openHipowerPedestrainFlowDialog() {
+    this.dialog.open(HipowerPedestrainFlowDialogComponent, {
+      // minHeight: '85vh',
+      // maxHeight: '85vh',
+    });
+  }
+
+  openHipowerRockfallDialog() {
+    this.dialog.open(HipowerRockfallDialogComponent, {
+      minHeight: '65vh',
+      maxHeight: '85vh',
+      maxWidth: '600px',
+    });
+  }
+
+  openHipowerTrafficFlowDialog() {
+    this.dialog.open(HipowerTrafficFlowDialogComponent, {
+      minHeight: '85vh',
+      maxHeight: '85vh',
+    });
+  }
+
+  openHipowerOtherDialog() {
+    this.dialog.open(HipowerOtherDialogComponent, {
+      minHeight: '85vh',
+      maxHeight: '85vh',
+      maxWidth: '600px',
+    });
+  }
 }
 
 @Component({
   selector: 'app-swm-console-dialog',
   templateUrl: './work-experience/swm-console-dialog.component.html',
-  styleUrls: ['./work-experience/swm-console-dialog.component.scss']
+  styleUrls: ['./work-experience/work-dialog.component.scss']
 })
 export class SwmConsoleDialogComponent { }
+
+@Component({
+  selector: 'app-hipower-pedestrain-flow-dialog',
+  templateUrl: './work-experience/hipower-pedestrain-flow-dialog.component.html',
+  styleUrls: ['./work-experience/work-dialog.component.scss']
+})
+export class HipowerPedestrainFlowDialogComponent { }
+
+@Component({
+  selector: 'app-hipower-rockfall-dialog',
+  templateUrl: './work-experience/hipower-rockfall-dialog.component.html',
+  styleUrls: ['./work-experience/work-dialog.component.scss']
+})
+export class HipowerRockfallDialogComponent { }
+
+@Component({
+  selector: 'app-hipower-traffic-flow-dialog',
+  templateUrl: './work-experience/hipower-traffic-flow-dialog.component.html',
+  styleUrls: ['./work-experience/work-dialog.component.scss']
+})
+export class HipowerTrafficFlowDialogComponent { }
+
+@Component({
+  selector: 'app-hipower-other-dialog',
+  templateUrl: './work-experience/hipower-other-dialog.component.html',
+  styleUrls: ['./work-experience/work-dialog.component.scss']
+})
+export class HipowerOtherDialogComponent { }

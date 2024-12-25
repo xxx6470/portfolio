@@ -50,18 +50,35 @@
     "Dealer_Member_Shopping_System": "Dealer Member Shopping System",
     "work_content": {
       "1": "Frontend library use Bootstrap",
-      "2": "Third-Party Integration : Email, SMS, Payment, Shipping"
+      "2": "Third-Party Integration : Email, SMS, Payment, Shipping",
+      "3": "Master-Slave Replication"
     }
   },
   "HiPower": {
     "Traffic_Flow_System": "Traffic Flow System",
     "Rockfall_Monitoring_System": "Rockfall Monitoring System",
     "Pedestrian_Flow_System": "Pedestrian Flow System",
+    "Other": "Other",
     "Exhibition_and_event1": "AIoT Taiwan",
     "work_content": {
       "1": "Frontend library use Bootstrap, Chart.js",
       "2": "Embed IPCam, Real Time Streaming Protocol",
       "3": "Third-Party Integration : Embed Google Map with Google Map API, LINE Messaging API"
+    },
+    "Backend_Management_System_Website": "Backend management system website",
+    "Rockfall": {
+      "1": "Backend Management System Website: Displays real-time status indicators representing various monitoring stations and their monitored values. Users can input latitude and longitude to search for locations, select device information from a list to view equipment positions on the map, and open a pop-up window to display real-time monitoring data for the selected device.",
+      "2": "Send rockfall incident notifications via Line",
+      "3": "Camera Control"
+    },
+    "Traffic": {
+      "1": "Road traffic and parking lot availability",
+      "2": "Historical data statistics chart"
+    },
+    "Other_Content": {
+      "1": "Environmental Protection Bureau Air Quality Monitoring Network Data Scraping",
+      "2": "Distribution of monitoring stations across Taiwan, displaying icons with changing colors based on air quality, and showing real-time data",
+      "3": "Parking information"
     }
   },
   "Portfolio_Website": "Portfolio Website",

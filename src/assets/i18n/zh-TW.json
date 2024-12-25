@@ -50,18 +50,35 @@
     "Dealer_Member_Shopping_System": "經銷會員購物系統",
     "work_content": {
       "1": "前端 library 使用 Bootstrap",
-      "2": "第三方串接 : Email, SMS, 金流, 物流"
+      "2": "第三方串接 : Email, SMS, 金流, 物流",
+      "3": "Master-Slave Replication"
     }
   },
   "HiPower": {
-    "Traffic_Flow_System": "車流系統",
-    "Rockfall_Monitoring_System": "落石監控系統",
-    "Pedestrian_Flow_System": "人流系統",
+    "Traffic_Flow_System": "車輛辨識管理系統",
+    "Rockfall_Monitoring_System": "落石監測系統",
+    "Pedestrian_Flow_System": "人流管理系統",
+    "Other": "其他",
     "Exhibition_and_event1": "台灣國際人工智慧暨物聯網展",
     "work_content": {
       "1": "前端 library 使用 Bootstrap, Chart.js",
       "2": "串接 IPCam, RTSP即時訊息協定",
       "3": "第三方串接 : Google Map API 嵌入 Google 地圖, LINE Messaging API"
+    },
+    "Backend_Management_System_Website": "後台管理系統",
+    "Rockfall": {
+      "1": "後台管理系統網站，即時燈號顯示方式代表各監測站點，監測數值狀態、可輸入經緯度查詢位置、可點選設備列表資訊查看地圖上設備位置、已彈跳視窗呈現該設備即時監測數據",
+      "2": "Line 落石事件發送",
+      "3": "攝影機控制"
+    },
+    "Traffic": {
+      "1": "道路車流、停車場剩餘車位",
+      "2": "歷史資料統計圖"
+    },
+    "Other_Content": {
+      "1": "環保局空氣品質監測網資料抓取",
+      "2": "全台監測站分佈，依空氣品質顯示更換圖示顏色、顯示即時數據",
+      "3": "停車資訊"
     }
   },
   "Portfolio_Website": "作品集",
