@@ -40,7 +40,7 @@
     "work_content": {
       "1": "Frontend library use Bootstrap, Material, ECharts.js",
       "2": "Third-Party Integration : Embed Google Map with Google Map API, Firebase for authentication and Application push notification, LINE Messaging API.",
-      "3": "Localization build with i18n (中 / English / 日文 / Slovensko etc.)",
+      "3": "Localization build with i18n",
       "4": "Created real-time dashboard for network monitoring services with socket.io",
       "5": "Use MQTT and WebSocket server to communicate in real time."
     }

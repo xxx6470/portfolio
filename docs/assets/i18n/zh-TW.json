@@ -40,7 +40,7 @@
     "work_content": {
       "1": "前端 library 使用 Bootstrap, Material, ECharts.js",
       "2": "第三方串接 : Google Map API 嵌入 Google 地圖, Firebase 進行身份驗證和 app FCM 推播通知, LINE Messaging API",
-      "3": "多國語系 `i18n` (中 / English / 日文 / Slovensko etc.)",
+      "3": "多國語系",
       "4": "客戶端使用 socket.io 建立即時資料傳送服務",
       "5": "伺服端使用 MQTT 及 WebSocket 建立即時溝通"
     }
